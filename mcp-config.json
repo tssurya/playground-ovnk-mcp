@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "ovsdb-rbac-server": {
+      "command": "/home/surya/go/src/github.com/playground-ovnk-mcp/ovsdb-mcp-server",
+      "args": [],
+      "cwd": "/home/surya/go/src/github.com/playground-ovnk-mcp",
+      "env": {
+        "OVSDB_LOG_LEVEL": "info",
+        "KUBECONFIG": "/home/surya/ovn.conf"
+      }
+    }
+  }
+} 

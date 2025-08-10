@@ -1,0 +1,44 @@
+{
+    "name": "OVN_Northbound",
+    "version": "6.3.0",
+    "cksum": "2805249011 25912",
+    "tables": {
+        "Logical_Switch": {
+            "columns": {
+                "name": {"type": "string"},
+                "external_ids": {
+                    "type": {"key": "string", "value": "string", "min": 0, "max": "unlimited"}
+                }
+            },
+            "indexes": [["name"]],
+            "isRoot": true
+        },
+        "Logical_Switch_Port": {
+            "columns": {
+                "name": {"type": "string"},
+                "type": {"type": "string"},
+                "addresses": {
+                    "type": {"key": "string", "min": 0, "max": "unlimited"}
+                },
+                "external_ids": {
+                    "type": {"key": "string", "value": "string", "min": 0, "max": "unlimited"}
+                }
+            },
+            "indexes": [["name"]],
+            "isRoot": false
+        },
+        "ACL": {
+            "columns": {
+                "priority": {"type": "integer"},
+                "direction": {"type": "string"},
+                "match": {"type": "string"},
+                "action": {"type": "string"},
+                "log": {"type": "boolean"},
+                "external_ids": {
+                    "type": {"key": "string", "value": "string", "min": 0, "max": "unlimited"}
+                }
+            },
+            "isRoot": false
+        }
+    }
+} 
